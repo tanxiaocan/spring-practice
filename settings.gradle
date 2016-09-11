@@ -1,0 +1,6 @@
+rootProject.name = 'spring-practice'
+
+include 'spring-expresion-language'
+include 'spring-beans-practice'
+include 'spring-customtag-practice'
+

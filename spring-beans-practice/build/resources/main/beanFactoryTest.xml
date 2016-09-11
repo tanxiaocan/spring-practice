@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans profile="test;qa">
+        <bean id="myTestBean" class="com.txc.spring.beans.practices.MyTestBean">
+            <property name="testProfile" value="testProfile"></property>
+        </bean>
+    </beans>
+
+    <beans profile="product">
+        <bean id="myTestBean" class="com.txc.spring.beans.practices.MyTestBean">
+            <property name="testProfile" value="productProfile"></property>
+        </bean>
+    </beans>
+
+</beans>
